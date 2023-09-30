@@ -1,0 +1,31 @@
+body{
+    font-family: Roboto;
+    background-color: #916024;
+    color: #8CDAFF;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+    font-family: "Onest";
+    font-size: 40pt;
+ }
+
+ header {
+    text-align: center;
+ }
+
+ #hero,footer {
+    color: #337391;
+    border: 2px solid#337391;
+    background-color: #DEA764;
+    text-align: center;
+    padding: 10px;
+}
+
+#hero img {
+    width: 300px;
+}
+
+#bio {
+    text-align: center;
+}
+
