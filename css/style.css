@@ -9,6 +9,15 @@ body{
     font-size: 40pt;
  }
 
+ h1 {
+    font-size: 40pt;
+ }
+
+ h2{
+    font-size: 20pt;
+    text-decoration-line: underline;
+ }
+
  header {
     text-align: center;
  }
@@ -27,5 +36,13 @@ body{
 
 #bio {
     text-align: center;
+}
+
+#hobbies {
+    background-color: #DEA764;
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid #337391;
+    color: #337391;
 }
 
