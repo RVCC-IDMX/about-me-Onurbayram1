@@ -162,5 +162,22 @@ figure{
 }
 }
 
+#Video{
+    margin: 5%;
+    border: 0.5em solid #8CDAFF;
+    text-align: center;
+    padding: 20;
+    border-radius: 20em;
+    background-color: #DEA764;
+    box-shadow: 5px 100px 200px black inset;
+    
+}
+#Video iframe {
+    margin: 20px;
+    border: 7.5px solid #337391;
+    bo
+}
+
+
 
 
