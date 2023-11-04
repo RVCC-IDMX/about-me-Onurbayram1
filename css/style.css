@@ -178,6 +178,8 @@ figure{
     bo
 }
 
-
+#formElements{
+    display: grid;
+}
 
 
