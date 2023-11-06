@@ -1,6 +1,9 @@
+
+/* New Colors - 1F3233, 296366, 00000, 219da3, 99c5c7*/ 
+
 body{
     font-family: Roboto;
-    background-color: #916024;
+    background-color: #1F3233;
     color: #8CDAFF;
  }
 
@@ -25,7 +28,7 @@ body{
  #hero,footer {
     color: #337391;
     border: 2px solid#337391;
-    background-color: #DEA764;
+    background-color: #99C5C7;
     text-align: center;
     padding: 10px;
 }
@@ -33,6 +36,8 @@ body{
 /* Hero Section */
 #hero img {
     width: 300px;
+    border: black solid;
+    border-radius: 20px;
 }
 
 /* Bio Section */
@@ -42,11 +47,12 @@ body{
 
 /* Hobbies */ 
 #hobbies {
-    background-color: #DEA764;
+    font-size: 20px;
+    background-color: #99C5C7;
     padding: 20px;
     margin: 50px;
-    border: 12.5px solid #337391;
-    color: #337391;
+    border: 12.5px solid #219DA3;
+    color: #296366;
     border-radius: 75px;
     border-style: double;
     display: flex;
@@ -68,16 +74,16 @@ body{
     grid-template-columns: 2fr 1fr;
     max-width: 100%;
     max-height: 100%;
-    border: 3px solid #8CDAFF;
+    border: 6px solid #1F3233;
 }
 
 #gallery figure {
     text-align: center;
-    border: 6px solid #337391;
+    border: 10px solid #99C5C71;
     padding: 25px;
     font-size: large;
-    background: #DEA764;
-    color: #337391;
+    background: #219DA3;
+    color: black;
     font-weight: 600;
     box-shadow: 25px 25px 50px black inset;
     border-radius:100px;
@@ -164,22 +170,70 @@ figure{
 
 #Video{
     margin: 5%;
-    border: 0.5em solid #8CDAFF;
+    border: 0.5em solid #219DA3;
     text-align: center;
     padding: 20;
     border-radius: 20em;
-    background-color: #DEA764;
+    background-color: #99C5C7;
     box-shadow: 5px 100px 200px black inset;
     
 }
 #Video iframe {
     margin: 20px;
-    border: 7.5px solid #337391;
-    bo
+    border: 7.5px solid white;
 }
 
 #formElements{
     display: grid;
+    row-gap: 0.5rem;
 }
 
+#contact{
+    font-weight: 600;
+    border-radius: 50px;
+    width:1000px;
+    color: #296366;
+    background-color:#99C5C7;
+    padding: 1rem;
+    max-width: 600px;
+    margin:2rem auto;
+}
 
+fieldset {
+    border-radius: 20px 20px 20px;
+    font-size: large;
+    border: 4px solid black;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+legend{
+    background-color: black;
+    color:#99C5C7;
+    padding: 0.5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button{
+    padding: .5em;
+    font-size: 1rem;
+}
+ 
+#contact ul{
+    list-style: none;
+    padding: 0px;
+
+}
+#contact li {
+    margin:1rem
+}
+
+#contact button{
+    background-color: black;
+    color:white;
+    border:1px solid black;
+    max-width: 400px;
+    width:75%;
+    justify-self: center;
+}
