@@ -1,9 +1,11 @@
 
-/* New Colors - 1F3233, 296366, 00000, 219da3, 99c5c7*/ 
+/* New Colors - #3299AD ,#3C707A, #14BEE0, #314447, #2D3233 */ 
 
 body{
+    max-width: 100%;
+    max-height: 100%;
     font-family: Roboto;
-    background-color: #1F3233;
+    background-color:#2D3233;
     color: #8CDAFF;
  }
 
@@ -21,16 +23,38 @@ body{
     text-decoration-line: underline;
  }
 
+
+/* Header code*/
  header {
     text-align: center;
+    background-color: #14BEE0;
+    box-shadow:black inset 10px 10px 15px;
+    border: #2D3233 solid 3px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+ }
+
+ header img{
+    padding-top: 20px;
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin-left: 30px;
+ }
+
+ header h1{
+   margin: 40px;
+    color: #2D3233;
  }
 
  #hero,footer {
-    color: #337391;
-    border: 2px solid#337391;
-    background-color: #99C5C7;
+    color:#314447;
+    border: 5px solid #314447;
     text-align: center;
     padding: 10px;
+    font-weight: 600;
+    margin-top: 30px;
 }
 
 /* Hero Section */
@@ -38,32 +62,52 @@ body{
     width: 300px;
     border: black solid;
     border-radius: 20px;
+    text-align: center;
 }
 
 /* Bio Section */
 #bio {
     text-align: center;
+
+   
 }
 
 /* Hobbies */ 
 #hobbies {
+    font-weight: bolder;
     font-size: 20px;
-    background-color: #99C5C7;
+    background-color:#3C707A;
     padding: 20px;
     margin: 50px;
-    border: 12.5px solid #219DA3;
-    color: #296366;
+    border: 12.5px solid #14BEE0;
+    color:#2D3233;
     border-radius: 75px;
     border-style: double;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+
+
+#hobbies img{
+    float: right;
+    height: 350px;
+    border: #14BEE0 solid 3px;
+    margin: 15px;
+    width: 250px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+    
+ 
 }
 
 /* Gallery */
 
 #gallery {
-    border: 10px solid #337391;
+    border: 10px solid #3299AD;
     text-align: center;
     border-style: ridge;
 
@@ -74,54 +118,109 @@ body{
     grid-template-columns: 2fr 1fr;
     max-width: 100%;
     max-height: 100%;
-    border: 6px solid #1F3233;
+    border: 6px solid #14BEE0;
+    border-radius: 50px;
+    height: 500px;
+    width: 400px;
+    margin-left: 40px;
 }
+
 
 #gallery figure {
     text-align: center;
-    border: 10px solid #99C5C71;
-    padding: 25px;
+    border: 5px solid #14BEE0;
+    margin: 20px;
     font-size: large;
-    background: #219DA3;
+    background: #3299AD;
+    padding: 30px;
     color: black;
     font-weight: 600;
     box-shadow: 25px 25px 50px black inset;
     border-radius:100px;
     border-style: outset;
-    
+    margin-left: 60px;
     
 }
-/*Literature*/
+/*Blog*/
 
-#lit{
-    border:2px solid #337391;
+
+.blog {
+    border: #14BEE0 solid 5px;
+
+}
+#blog{
+    text-align: center;
+    border:3px solid #3299AD;
     margin-bottom: 2rem;
     text-align: center;
-    
+    color: azure;
+    padding: 20px;
+
+   
 
 }
-#lit div{
+
+/* The Img code for the 2 pictures*/
+.column {
+    float: left;
+    width: 41.33%;
+    padding: 5px;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: flex;
+  }
+
+#blog img{
+    margin: 10px;
+    border: solid #3299AD 3px;
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 3rem;
+}
+
+
+#blog div{
     padding:2rem;
     max-width: 52.5rem;
     margin: 0 auto;
 
 }
 
-#lit div p {
+#blog div p {
+
     padding:0.3rem 0;
     clear: both;
-    font-size: large;
+    font-size: 2rem;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
+    
 
 }
 
+#blog div p::first-line{
+    font-size: 40px;
+}
+
+#blog h6{
+    font-size: 35px;
+    text-align: center;
+    
+}
+#blog h5{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+} 
+
 /* Dropcaps*/
 
-#lit div p::first-letter{
-    color: #0003c5;
+#blog div p::first-letter{
+    color: whitesmoke;
     font-size: 50px;
-    border: solid black 3px;
     padding: 3px;
     font-style: oblique;
     font-weight: 600;
@@ -170,17 +269,18 @@ figure{
 
 #Video{
     margin: 5%;
-    border: 0.5em solid #219DA3;
+    border: 0.5em solid #3299AD;
     text-align: center;
     padding: 20;
     border-radius: 20em;
-    background-color: #99C5C7;
+    background-color: #314447;
     box-shadow: 5px 100px 200px black inset;
     
 }
 #Video iframe {
-    margin: 20px;
-    border: 7.5px solid white;
+    margin: 30px;
+    margin-bottom: 60px;
+    border: 7.5px solid #14BEE0;
 }
 
 #formElements{
@@ -189,11 +289,12 @@ figure{
 }
 
 #contact{
+    border: 3px solid #3C707A;
     font-weight: 600;
     border-radius: 50px;
     width:1000px;
-    color: #296366;
-    background-color:#99C5C7;
+    color:#3299AD;
+    background-color:#314447;
     padding: 1rem;
     max-width: 600px;
     margin:2rem auto;
@@ -211,7 +312,7 @@ fieldset {
 
 legend{
     background-color: black;
-    color:#99C5C7;
+    color:#3299AD;
     padding: 0.5em;
 }
 

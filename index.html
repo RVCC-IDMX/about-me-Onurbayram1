@@ -11,26 +11,50 @@
     <link href="css/nav.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- the header shows logo and page title. -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="img/logo-96X96.svg" alt="Blue origami logo">
-                <h1>Web Dev I</h1>
-            </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+  
+    <header class="header">
 
-                </ul>
+        <img src="img/OB.png" alt="My initals as a logo">
+        <h1>Web Dev 1</h1>
+        <!-- the header shows logo and page title. -->
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#bio"><li>Bio</li></a>
+                <a href="#hobbies"><li>Hobbies</li></a>
+                <a href="#gallery"><li>Photo Gallery</li></a>
+                <a href="#Video"><li>Video</li></a>
+                <a href="#blog"><li>Blog</li></a>
+                <a href="#contact"><li>Contact Me</li></a>
+              </ul>
             </div>
-        </nav>
+          </nav>
+    </header>
 
    
-    </header>
+
+
+
 
     <main>
         <!--The main evelopes important page content-->
@@ -54,13 +78,22 @@
             <div>
                 <p> I want to be....</p>
 
-                <p>D1 coder</p>
+                <p>A software enginer. That is the job that I hope to get after my 4 years of college
+                    I enjoy working on the front end portion of a website because it allows me to be creative
+                    and show my creativity.
+                </p>
 
-                <p> My favorite sports are quite literally every sport except baseball.</p>
+                <p> I'm a active guy. I like to get out in nature weather it's hiking or a sport i'll enjoy it.
+                    I also am a fan of working out. I've been working out consisntanty for 3 years now and I haven't stopped
+                    working out since I started. 
+                </p>
 
-                <p> I would say I'm a pretty active fella.</p>
+                <p> I enjoy spending time with my family and friends. I always tell people there's noting that
+                    I would rather do then go out to eat with my buddies and we do go out once a week to eat. I really
+                    do feel like I have a great family around me along with my friends.
+                </p>
 
-                <p> Favorite thing is working out.</p>
+                <p></p>
             </div>
         </section>
 
@@ -69,10 +102,37 @@
             <h2> Hobbies: </h2>
             <ul>
                 <li> Snowboading </li>
+                    <p>I started to snowboard about 3 years ago. I started when covid was ongoing. I think at that
+                        time I was just trying to get out of the hosue and I picked it up. I won't lie my love 
+                        for it is slowly fading away. It's also a little bit inconvenient but I still like to get 
+                        on the moutain every once and a while. 
+                          
+                    </p>
+            
+                    <img src="img/IMG_0465.jpeg" alt="Picture of me shredding the tress of Steamboat Springs">
+                
                 <li> Working Out </li>
+                    <p>I would say that my oldest hobby I've kept with is working out. I really do see it
+                        as a form of meditation. I feel that working out has improved my life a lot. 
+                    </p>
+                    <img src="img/IMG_0652.jpeg" alt="Me golfing">
                 <li> Golf </li>
+                    <p>This is the newest hobby that I've picked up. I won't lie I am not that good at golf. But I 
+                        have never lost a round of golf, but I have only played with people far worse then me.
+                        For those wondering the lowest I've scored was a 92 on a Par 70. So pretty ugly but not 
+                        terrible
+
+                    </p>
+               
                 <li> Video Game </li>
-                <li> Coding </li> 
+                <p>I think most people can agree video games are great. I no longer take video games seriously I 
+                    look at it as a way to clear my mine. Sometimes it can be competitive but what else is new. 
+                </p>
+                <li>Eating </li> 
+                <p>As I said before I love going out to eat. Something about food just makes everything feel better.
+                    Also you never realize it but some of your best laughs with people are when your eating. 
+                </p>
+                
             </ul> 
         </section>
 
@@ -84,19 +144,25 @@
             <hr>
             <figure>
                 <img src="img/Woods-640w.jpg" alt="Wood trails at Winter Park">
-                <figcaption>Some powder covered trails deep in the trees at Winter Park</figcaption>
+                <figcaption>Some powder covered trails deep in the trees at Winter Park. Took a trip 
+                    to Colorado and captured this breathtaking picture.
+                </figcaption>
             </figure>
 
             <hr>
             <figure>
                 <img src="img/Cooper-640w.jpg" alt="Cooper Mountain">
-                <figcaption> Crazy massive mountain across from Cooper Mountain</figcaption>
+                <figcaption> Crazy massive mountain across from Cooper Mountain in Colorado. One of
+                    the most well rounded mountains I've been to.
+                </figcaption>
             </figure>
 
             <hr>
             <figure>
                 <img src="img/Abasin-640w.jpg" alt="Abasin">
-                <figcaption> Some ski trail sign and some fresh powder at Abasin (Arapahoe Basin)</figcaption>
+                <figcaption> Some ski trail sign and some fresh powder at Abasin (Arapahoe Basin). Got there on a powder day had about
+                    7 inches of fresh snow. 
+                </figcaption>
             </figure>
 
         </section>
@@ -106,58 +172,111 @@
 
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VqEZt6pIWwQ?si=dkKzZzipquzB_-Sx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+            
         </section>
 
-        <article id="lit">
+        <!--All of the blog code-->
 
-            <h2>The Life of Samuel Johnson </h2>
+        <article id="blog">
 
-            <div> <p>'Colley Cibber, Sir, was by no means a blockhead;
-                 but by arrogating to himself too much, he was in danger
-                  of losing that degree of estimation to which he was
-                   entitled. His friends gave out that he INTENDED his 
-                   birth-day Odes should be bad: but that was not the case,
-                    Sir; for he kept them many months by him, and a few years
-                     before he died he shewed me one of them, with great
-                      solicitude to render it as perfect as might be, and I
-                       made some corrections, to which he was not very willing 
-                       to submit. I remember the following couplet in allusion 
-                       to the King and himself:</p>
+              
+            
+            <div class ="blog"> 
 
-                <p>"Perch'd on the eagle's soaring wing,</p>
+                <h5> Image Hover Effects </h5>
+                <p>In the dynamic world of web design, creating an engaging and memorable user 
+                experience is crucial. One effective way to capture your audience's attention and
+                 add a touch of interactivity to your website is through image hover
+                effects. These effects not only enhance visual appeal but also provide
+                a seamless and interactive browsing experience. In this blog post,
+                 we'll explore the power of image hover effects and how you can use
+                them to elevate your website design.</p>
+
+                <img src="img/code-1076533_1280.jpg" alt="Picture of some random code">
+
+                <h6>Why use Hover Effects</h6>
+                    <p>Visual Engagment: Image hover effects bring a sense of dynamism to your website. 
+                    They allow users to interact with your content in a way that static
+                     images cannot achieve. By adding motion or subtle transitions, you 
+                     can create a visually stimulating experience that encourages users
+                      to explore further.</p>
                 
-                <p>The lowly linnet loves to sing."</p>
+                   <p> User Interaction: Hover effects provide a layer of interaction without
+                     requiring a click. This subtle interactivity can be 
+                     especially effective in showcasing additional information
+                     or revealing hidden details, enticing users to engage with
+                     your content.."</p>
+
+                     <div class="row">
+                        <div class="column">
+                          <img src="img/website-647013_640.jpg" alt="Picture of code" style="width: 100%">
+                        </div>
+                        <div class="column">
+                          <img src="img/arnold-francisca-f77Bh3inUpE-unsplash.jpg" alt="Picture of code on a laptop" style="width:100%">
+                        </div>
+                      </div>
+
+    
+                <p>Highlighting Call-to-Actions:
+                    If your website includes buttons or calls-to-action, 
+                    image hover effects can draw attention to these elements. 
+                    A well-designed hover effect on buttons can guide users 
+                    and encourage them to take desired actions.
+                    </p>
                 
-                <p>Sir, he had heard something of the fabulous tale of the 
-                    wren sitting upon the eagle's wing, and he had applied 
-                    it to a linnet. Cibber's familiar style, however, was 
-                    better than that which Whitehead has assumed. GRAND nonsense
-                     is insupportable. Whitehead is but a little man to inscribe 
-                     verses to players.</p>
+                <h6>Popular Image Hover Effects</h6>
+                <p>Zoom In/Out:
+                    A classic effect that zooms in or out on an image 
+                    as the user hovers over it. This effect is excellent 
+                    for showcasing product details or emphasizing the 
+                    finer aspects of a photograph.
+                    </p>
+                <p>
+                    Opacity Change: Adjusting the opacity of an image upon hover can 
+                    create a subtle and elegant effect. This is often 
+                    used to reveal text or additional content overlaid 
+                    on the image.</p>
                 
-                <p>'Sir, I do not think Gray a first-rate poet. He has
-                     not a bold imagination, nor much command of words. 
-                     The obscurity in which he has involved himself will 
-                     not persuade us that he is sublime. His Elegy in a 
-                     Church-yard has a happy selection of images,
-                      but I don't like what are called his great things. 
-                      His Ode which begins</p>
+                <p>Color Overlay:
+                    Adding a color overlay to an image can help maintain 
+                    a consistent color scheme while creating a visually 
+                    appealing effect. This is particularly effective for 
+                    creating a cohesive look across your website./p>
                 
-                <p>"Ruin seize thee, ruthless King,</p>
+                <p>Text Reveal:
+                    Conceal additional text or information and reveal
+                     it only when the user hovers over the image. This 
+                     effect is ideal for providing context or additional 
+                     details without cluttering the initial view.</p>
                 
-                <p>Confusion on thy banners wait!"</p>
-                
-                <p>has been celebrated for its abruptness, and plunging 
-                    into the subject all at once. But such arts as these 
-                    have no merit, unless when they are original. We admire
-                     them only once; and this abruptness has nothing new in 
-                     it. We have had it often before. Nay, we have it in the 
-                     old song of Johnny Armstrong:</p>
-                
-                <p>"Is there ever a man in all Scotland</p>
-                
-                <p>From the highest estate to the lowest degree," &c.</p></div>
+                <p>Gradient Transitions:
+                    Applying gradient transitions to images upon hover can 
+                    add a modern and stylish touch to your website. This 
+                    effect works well with backgrounds and can create a 
+                    smooth transition between colors.</p>
+
+                <h6>Implementing Image Hover Effects</h6>
+
+                <p>CSS Transitions:
+                    CSS is the go-to language for creating hover effects. 
+                    Use the :hover pseudo-class along with transitions to
+                     smoothly animate properties like scale, opacity, or color.
+                </p>
+
+                <p>JavaScript and jQuery:
+                    For more complex hover effects, JavaScript 
+                    and jQuery can be utilized to handle animations
+                     and interactions. This allows for greater customization
+                      and control over the behavior of your hover effects.
+                </p>
+
+                <p>Frameworks and Libraries:
+                    Many front-end frameworks and libraries, such as 
+                    Bootstrap and Animate.css, offer pre-built classes
+                     for adding hover effects. These can be easily integrated 
+                     into your project, saving time and effort.
+                </p>
+                </div>
         </article>
 
         <section id = contact>
