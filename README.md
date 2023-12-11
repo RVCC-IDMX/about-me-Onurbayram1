@@ -8,3 +8,5 @@ Onur Bayram
     To build my hamburger menu I used Erik Terwins code the link to the code is https://codepen.io/erikterwan/pen/EVzeRP
 
     The Nav  bar was a little bit difficult to make I can't like I did struggle a lot. I tried a lot of different things with the hamburger menu but I could not pull through with my code. It was a struggle never the less I ended up making it out pretty good.
+
+    My netlify status badge is [![Netlify Status](https://api.netlify.com/api/v1/badges/9305d43d-7a7e-4736-bd7c-883a9a0bbf0d/deploy-status)](https://app.netlify.com/sites/about-me-onurbayram1/deploys)
