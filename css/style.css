@@ -16,6 +16,7 @@ body{
 
  h1 {
     font-size: 40pt;
+   
  }
 
  h2{
@@ -172,6 +173,9 @@ body{
     display: flex;
   }
 
+
+/*blog*/
+
 #blog img{
     margin: 10px;
     border: solid #3299AD 3px;
@@ -215,6 +219,8 @@ body{
     font-size: 50px;
     text-decoration: underline;
 } 
+
+/*blog2 code*/
 
 .blog2{
     text-align: center;
@@ -284,7 +290,7 @@ figure{
     display: block;
 }
 }
-
+/*Video*/ 
 #Video{
     margin: 5%;
     border: 0.5em solid #3299AD;
@@ -306,6 +312,8 @@ figure{
     row-gap: 0.5rem;
 }
 
+
+/*Contact Code*/
 #contact{
     border: 3px solid #3C707A;
     font-weight: 600;
